@@ -76,9 +76,9 @@ const useStyles = makeStyles((theme) => ({
 		position: "absolute",
 		transition: "all 0.4s ease",
 		fontSize: "2rem",
-		color: "black",
+		color: "#f5f5f5",
 		textAlign: "center",
-		color: "white",
+
 		[theme.breakpoints.down(1700)]: {
 			fontSize: "1.5rem",
 		},

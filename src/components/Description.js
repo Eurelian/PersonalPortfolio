@@ -18,7 +18,11 @@ const Description = () => {
 		<section>
 			<div>
 				<animated.div style={deskPicIn} className='svg-container'>
-					<img src={desk} style={{ marginBottom: "-10px" }}></img>
+					<img
+						src={desk}
+						style={{ marginBottom: "-10px" }}
+						alt='developer desk'
+					></img>
 				</animated.div>
 
 				<div className='main-description'>

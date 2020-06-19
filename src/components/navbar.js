@@ -193,7 +193,6 @@ const NavBar = ({ path }) => {
 							<Grid item className={classes.socialItem}>
 								<a
 									href='https://www.linkedin.com/in/sum-octavian/'
-									target='_blank'
 									style={{ textDecoration: "none", color: "#f5f5f5" }}
 								>
 									<FontAwesomeIcon
@@ -206,7 +205,6 @@ const NavBar = ({ path }) => {
 								{" "}
 								<a
 									href='https://github.com/Eurelian'
-									target='_blank'
 									style={{ textDecoration: "none", color: "#f5f5f5" }}
 								>
 									<FontAwesomeIcon

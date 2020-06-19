@@ -6,11 +6,7 @@ import Box from "@material-ui/core/Box";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-import {
-	faLinkedin,
-	faGithub,
-	faDribbble,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
@@ -150,7 +146,6 @@ const Footer = () => {
 							<Grid item className={classes.socialItem}>
 								<a
 									href='https://www.linkedin.com/in/sum-octavian/'
-									target='_blank'
 									style={{ textDecoration: "none", color: "#f5f5f5" }}
 								>
 									<FontAwesomeIcon
@@ -163,7 +158,6 @@ const Footer = () => {
 								{" "}
 								<a
 									href='https://github.com/Eurelian'
-									target='_blank'
 									style={{ textDecoration: "none", color: "#f5f5f5" }}
 								>
 									<FontAwesomeIcon
