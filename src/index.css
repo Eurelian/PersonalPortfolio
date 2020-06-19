@@ -1,13 +1,207 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #191919;
+	overflow-x: hidden;
+	width: 100%;
+}
+a {
+	text-decoration: none;
+	color: #f5f5f5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* NAVBAR */
+.nav-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 15%;
+	/* position: sticky;
+	top: 0; */
+}
+
+.nav-title {
+	color: white;
+	text-transform: uppercase;
+	font-family: "Teko";
+	font-size: 2.5rem;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+
+	list-style: none;
+}
+
+.nav-link {
+	color: white;
+	font-family: "Montserrat";
+	font-size: 14px;
+	margin: 0 40px;
+	margin-right: 0px;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.cv {
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	color: #ff2e63;
+}
+
+.nav-btn {
+	color: #ff2e63;
+	border: 2px solid #ff2e63;
+	padding: 12px 18px;
+	border-radius: 10px;
+	transition: all 0.4s ease;
+}
+
+.nav-btn:hover {
+	color: white;
+	background: #ff2e63;
+}
+
+/* HERO */
+
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 15%;
+}
+
+.hero-title {
+	color: #f5f5f5;
+	font-family: "Teko";
+	font-size: 4rem;
+	text-align: center;
+}
+
+.hero-sub {
+	color: #f5f5f5;
+	font-family: "Montserrat";
+	font-size: 1rem;
+	line-height: 1.8;
+	text-align: center;
+	padding: 15px;
+}
+
+.hero-image {
+	clip-path: circle(49% at 50% 50%);
+	margin-top: 50px;
+}
+
+/* Description */
+
+.main-description {
+	background: linear-gradient(
+		56deg,
+		rgba(255, 46, 99, 1) 0%,
+		rgba(232, 0, 59, 1) 100%
+	);
+	height: auto;
+	margin: 0;
+	padding-bottom: 200px;
+}
+
+.description {
+	padding: 20px 30%;
+}
+.description-title {
+	font-family: "Teko";
+	color: #f5f5f5;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+	font-weight: 300;
+	font-size: 3.5rem;
+	line-height: 1.2;
+	text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+}
+.description-text {
+	color: #f5f5f5;
+	font-family: "Montserrat";
+	font-size: 1.2rem;
+	line-height: 1.8;
+	text-align: center;
+	padding: 15px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.svg-container {
+	width: 40%;
+	margin: 0 auto;
+	z-index: -1;
+}
+
+.line1 {
+	background: white;
+	height: 0.2rem;
+	margin: 10px;
+	width: 40px;
+	transition: all 0.4s ease;
+}
+
+.line2 {
+	background: white;
+	height: 0.2rem;
+	margin: 10px;
+	width: 30px;
+	transition: all 0.4s ease;
+}
+
+.burger {
+	cursor: pointer;
+	z-index: 100;
+
+	/* display: none; */
+}
+
+.burger:hover .line1 {
+	background: #ff2e63;
+}
+
+.burger:hover .line2 {
+	background: #ff2e63;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(
+		56deg,
+		rgba(255, 46, 99, 1) 0%,
+		rgba(232, 0, 59, 1) 100%
+	);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 1;
+	opacity: 1;
+	clip-path: circle(50px at 100% -10%);
+	/* -webkit-clip-path: circle(50px at 100% -10%); */
+}
+
+@media screen and (max-width: 750px) {
+	.description {
+		padding: 25px;
+	}
+	.description-text {
+		font-size: 16px;
+	}
+
+	.svg-container {
+		width: 80%;
+	}
 }
