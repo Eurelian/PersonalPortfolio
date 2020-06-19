@@ -99,24 +99,24 @@ const ContactForm = (props) => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		// if (
-		// 	contact.name.length < 3 ||
-		// 	contact.email.length < 3 ||
-		// 	contact.message.length < 3
-		// )
-		// 	alert("Please fill in all the fields.");
-		// else {
-		axios
-			.post("https://portfoliomessage.herokuapp.com/contact", {
-				name: contact.name,
-				email: contact.email,
-				message: contact.message,
-			})
-			.then((res) => console.log(res))
-			.catch((err) => console.error(err));
-		setContact({ name: "", email: "", message: "" });
-		setIsSent(!isSent);
-		// }
+		if (
+			contact.name.length < 3 ||
+			contact.email.length < 3 ||
+			contact.message.length < 3
+		)
+			alert("Please fill in all the fields.");
+		else {
+			axios
+				.post("https://portfoliomessage.herokuapp.com/contact", {
+					name: contact.name,
+					email: contact.email,
+					message: contact.message,
+				})
+				.then((res) => console.log(res))
+				.catch((err) => console.error(err));
+			setContact({ name: "", email: "", message: "" });
+			setIsSent(!isSent);
+		}
 
 		console.log("Submitted");
 	};
