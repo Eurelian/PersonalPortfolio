@@ -8,6 +8,7 @@ import comics_awesome from "../img/comics_awesome.png";
 import modest_shirley from "../img/modest_shirley.png";
 import random_recipe from "../img/random_recipe.png";
 import star_struck from "../img/star_struck.png";
+import scrum_board from "../img/scrum_board.png";
 
 import { CardActionArea } from "@material-ui/core";
 
@@ -130,6 +131,22 @@ const MyWork = () => {
 									<CardMedia className={classes.cardBack}>
 										E-Commerce Store
 										<br /> Stack: <br /> ReactJS, NodeJS, MongoDB, Material UI
+									</CardMedia>
+								</CardActionArea>
+							</Card>
+						</Grid>
+
+						<Grid item xs={12} sm={6} md={4}>
+							<Card className={classes.card}>
+								<CardActionArea href='https://happy-babbage-272068.netlify.app/'>
+									<CardMedia
+										className={classes.img}
+										image={scrum_board}
+										alt=' scrum board project '
+									></CardMedia>
+									<CardMedia className={classes.cardBack}>
+										Scrum Board
+										<br /> Stack: <br /> Javascript, CSS, HTML
 									</CardMedia>
 								</CardActionArea>
 							</Card>
