@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
@@ -81,7 +81,11 @@ const SkillCards = () => {
 										<Card className={classes.card}>
 											<CardContent>
 												<Box className={classes.imgContainer}>
-													<img className={classes.img} src={iconBE} />
+													<img
+														className={classes.img}
+														src={iconBE}
+														alt='front-end development'
+													/>
 												</Box>
 												<Typography align='center' className={classes.title}>
 													Front-End Development
@@ -136,7 +140,11 @@ const SkillCards = () => {
 										<Card className={classes.card}>
 											<CardContent>
 												<Box className={classes.imgContainer}>
-													<img className={classes.img} src={iconFE} />
+													<img
+														className={classes.img}
+														src={iconFE}
+														alt='back-end development'
+													/>
 												</Box>
 												<Typography align='center' className={classes.title}>
 													Back-End Development
@@ -190,7 +198,11 @@ const SkillCards = () => {
 										<Card className={classes.card}>
 											<CardContent>
 												<Box className={classes.imgContainer}>
-													<img className={classes.img} src={iconPM} />
+													<img
+														className={classes.img}
+														src={iconPM}
+														alt='project management'
+													/>
 												</Box>
 												<Typography align='center' className={classes.title}>
 													Project-Mangement

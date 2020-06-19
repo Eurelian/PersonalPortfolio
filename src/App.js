@@ -4,7 +4,7 @@ import { Route, Switch, useLocation } from "react-router-dom";
 import ContactForm from "./components/ContactForm";
 import { ThemeProvider } from "@material-ui/styles";
 import theme from "./components/UI/theme";
-import { useSpring, animated, useTransition, config } from "react-spring";
+import { animated, useTransition, config } from "react-spring";
 
 function App() {
 	const location = useLocation();

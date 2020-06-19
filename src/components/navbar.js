@@ -2,13 +2,9 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSpring, animated, config } from "react-spring";
 import Grid from "@material-ui/core/Grid";
-import Box from "@material-ui/core/Box";
+
 import { makeStyles } from "@material-ui/core/styles";
-import {
-	faLinkedin,
-	faGithub,
-	faDribbble,
-} from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as easings from "d3-ease";
 

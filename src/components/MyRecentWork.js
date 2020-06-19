@@ -8,7 +8,7 @@ import comics_awesome from "../img/comics_awesome.png";
 import modest_shirley from "../img/modest_shirley.png";
 import random_recipe from "../img/random_recipe.png";
 import star_struck from "../img/star_struck.png";
-import { useSpring } from "react-spring";
+
 import { CardActionArea } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
@@ -121,13 +121,11 @@ const MyWork = () => {
 					<Grid container className={classes.cardRow} justify='center'>
 						<Grid item xs={12} sm={6} md={4}>
 							<Card className={classes.card}>
-								<CardActionArea
-									target='_blank'
-									href='https://comicsawesome.netlify.app/'
-								>
+								<CardActionArea href='https://comicsawesome.netlify.app/'>
 									<CardMedia
 										className={classes.img}
 										image={comics_awesome}
+										alt='e-commerce site'
 									></CardMedia>
 									<CardMedia className={classes.cardBack}>
 										E-Commerce Store
@@ -139,13 +137,11 @@ const MyWork = () => {
 
 						<Grid item xs={12} sm={6} md={4}>
 							<Card className={classes.card}>
-								<CardActionArea
-									target='_blank'
-									href='https://quizzical-shockley-6aebfe.netlify.app/'
-								>
+								<CardActionArea href='https://quizzical-shockley-6aebfe.netlify.app/'>
 									<CardMedia
 										className={classes.img}
 										image={star_struck}
+										alt=' star struck '
 									></CardMedia>
 									<CardMedia className={classes.cardBack}>
 										NASA Pic of The Day
@@ -164,6 +160,7 @@ const MyWork = () => {
 									<CardMedia
 										className={classes.img}
 										image={random_recipe}
+										alt='random recipe app'
 									></CardMedia>
 									<CardMedia className={classes.cardBack}>
 										Recipe Generator
@@ -182,6 +179,7 @@ const MyWork = () => {
 									<CardMedia
 										className={classes.img}
 										image={modest_shirley}
+										alt=' recipe blog'
 									></CardMedia>
 									<CardMedia className={classes.cardBack}>
 										Recipe Blog

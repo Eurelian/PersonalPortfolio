@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import desk from "../img/desk.svg";
 import SkillCards from "../components/SkillCards";
 import Grid from "@material-ui/core/Grid";
