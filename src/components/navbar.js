@@ -72,11 +72,11 @@ const useStyles = makeStyles((theme) => ({
 		marginTop: "30px",
 	},
 
-	navSticky: {
-		position: "sticky",
-		top: 0,
-		backdropFilter: "blur(0.8)",
-	},
+	// navSticky: {
+	// 	position: "sticky",
+	// 	top: 0,
+	// 	backdropFilter: "blur(0.8)",
+	// },
 }));
 
 const NavBar = ({ path }) => {
@@ -134,7 +134,7 @@ const NavBar = ({ path }) => {
 
 	return (
 		<React.Fragment>
-			<header className={`nav-header ${classes.navSticky}`}>
+			<header className={`nav-header`}>
 				<Link to='/' style={{ textDecoration: "none" }}>
 					<animated.h1 className='nav-title' style={slideFromLeft}>
 						{" "}

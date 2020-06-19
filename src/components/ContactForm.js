@@ -145,20 +145,6 @@ const ContactForm = (props) => {
 		config: { duration: 1000, easing: easings.easeCubic },
 	});
 
-	const moveIn = useSpring({
-		to: async (next, cancel) => {
-			await next({
-				transform: isSent ? "translateX(0px)" : "translateX(-1000px)",
-				opacity: isSent ? 1 : 0,
-			});
-			await next({
-				display: isSent ? "block" : "none",
-			});
-		},
-		config: { duration: 1000, easing: easings.easeCubic },
-		delay: 3000,
-	});
-
 	const confirm = useSpring({
 		to: {
 			transform: isSent ? "translateY(-50px)" : "translateY(-400px)",
