@@ -5,6 +5,8 @@ import ContactForm from "./components/ContactForm";
 import { ThemeProvider } from "@material-ui/styles";
 import theme from "./components/UI/theme";
 import { animated, useTransition, config } from "react-spring";
+import { Helmet } from "react-helmet";
+import favicon from "./img/favicon-32x32.png";
 
 function App() {
 	const location = useLocation();
@@ -17,9 +19,14 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<div className='App'>
-				{transition.map((item) => (
-					<animated.div key={item.key} style={item.props}>
-						<Switch location={item.item}>
+				<Helmet>
+					<meta charSet='utf-8' />
+					<title>Octavian Sum | Full-Stack Web & App Developer</title>
+					<link rel='icon' type='image/png' href={favicon} />
+				</Helmet>
+				{transition.map(({ item, props, key }) => (
+					<animated.div key={key} style={props}>
+						<Switch location={item}>
 							<Route path='/contact' component={ContactForm} />
 							<Route path='/' component={HomePage} />
 						</Switch>

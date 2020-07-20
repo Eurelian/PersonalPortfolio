@@ -168,8 +168,8 @@ const NavBar = ({ path }) => {
 					className={isOpen ? `burger` : `burger ${classes.burgerToggle}`}
 					onClick={() => setIsOpen(!isOpen)}
 				>
-					<animated.div class='line1' style={first}></animated.div>
-					<animated.div class='line2' style={second}></animated.div>
+					<animated.div className='line1' style={first}></animated.div>
+					<animated.div className='line2' style={second}></animated.div>
 				</div>
 			</header>
 			<animated.div className='menu' style={menu}>
@@ -179,19 +179,21 @@ const NavBar = ({ path }) => {
 							<h1 className={classes.menuLink}>Say Hello</h1>
 						</Link>
 					)}
-					<Link style={{ textDecoration: "none" }}>
+					<Link
+						style={{ textDecoration: "none" }}
+						to='https://portfoliomessage.herokuapp.com/cv'
+					>
 						<h1 className={classes.menuLink}>
 							{" "}
-							<a
+							<p
 								className={classes.CVLink}
-								href='https://portfoliomessage.herokuapp.com/cv'
 								style={{
 									textDecoration: "none",
 									color: "#f5f5f5",
 								}}
 							>
 								CV
-							</a>
+							</p>
 						</h1>
 					</Link>
 					<Grid item className={classes.social}>

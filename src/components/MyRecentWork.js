@@ -9,6 +9,7 @@ import modest_shirley from "../img/modest_shirley.png";
 import random_recipe from "../img/random_recipe.png";
 import star_struck from "../img/star_struck.png";
 import scrum_board from "../img/scrum_board.png";
+import pareta_app from "../img/pareta_app.png";
 
 import { CardActionArea } from "@material-ui/core";
 
@@ -120,6 +121,23 @@ const MyWork = () => {
 					justify='center'
 				>
 					<Grid container className={classes.cardRow} justify='center'>
+						<Grid item xs={12} sm={6} md={4}>
+							<Card className={classes.card}>
+								<CardActionArea href='https://pareta.netlify.app/'>
+									<CardMedia
+										className={classes.img}
+										image={pareta_app}
+										alt='social parenting app pareta'
+									></CardMedia>
+									<CardMedia className={classes.cardBack}>
+										Social Parenting App
+										<br /> Stack: <br /> ReactJS, NodeJS, MongoDB, Material UI,
+										Git
+									</CardMedia>
+								</CardActionArea>
+							</Card>
+						</Grid>
+
 						<Grid item xs={12} sm={6} md={4}>
 							<Card className={classes.card}>
 								<CardActionArea href='https://comicsawesome.netlify.app/'>
