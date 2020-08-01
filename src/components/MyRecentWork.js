@@ -4,12 +4,8 @@ import Typography from "@material-ui/core/Typography";
 import Card from "@material-ui/core/Card";
 import { makeStyles } from "@material-ui/core/styles";
 import CardMedia from "@material-ui/core/CardMedia";
-import comics_awesome from "../img/comics_awesome.png";
-import modest_shirley from "../img/modest_shirley.png";
-import random_recipe from "../img/random_recipe.png";
-import star_struck from "../img/star_struck.png";
-import scrum_board from "../img/scrum_board.png";
-import pareta_app from "../img/pareta_app.png";
+
+import { projects } from "../data/projects.json";
 
 import { CardActionArea } from "@material-ui/core";
 
@@ -103,12 +99,13 @@ const MyWork = () => {
 
 	return (
 		<Fragment>
+			{console.log(projects)}
 			<Grid className={classes.root} container justify='center'>
 				<Grid item xs={12}>
 					<Typography className={classes.title}>My Work</Typography>
 
 					<Typography className={classes.subTitle}>
-						Check out what I've been working on recently
+						Take a look at what I've been working on recently
 					</Typography>
 				</Grid>
 
@@ -121,108 +118,26 @@ const MyWork = () => {
 					justify='center'
 				>
 					<Grid container className={classes.cardRow} justify='center'>
-						<Grid item xs={12} sm={6} md={4}>
-							<Card className={classes.card}>
-								<CardActionArea href='https://pareta.netlify.app/'>
-									<CardMedia
-										className={classes.img}
-										image={pareta_app}
-										alt='social parenting app pareta'
-									></CardMedia>
-									<CardMedia className={classes.cardBack}>
-										Social Parenting App
-										<br /> Stack: <br /> ReactJS, NodeJS, MongoDB, Material UI,
-										Git
-									</CardMedia>
-								</CardActionArea>
-							</Card>
-						</Grid>
-
-						<Grid item xs={12} sm={6} md={4}>
-							<Card className={classes.card}>
-								<CardActionArea href='https://comicsawesome.netlify.app/'>
-									<CardMedia
-										className={classes.img}
-										image={comics_awesome}
-										alt='e-commerce site'
-									></CardMedia>
-									<CardMedia className={classes.cardBack}>
-										E-Commerce Store
-										<br /> Stack: <br /> ReactJS, NodeJS, MongoDB, Material UI
-									</CardMedia>
-								</CardActionArea>
-							</Card>
-						</Grid>
-
-						<Grid item xs={12} sm={6} md={4}>
-							<Card className={classes.card}>
-								<CardActionArea href='https://happy-babbage-272068.netlify.app/'>
-									<CardMedia
-										className={classes.img}
-										image={scrum_board}
-										alt=' scrum board project '
-									></CardMedia>
-									<CardMedia className={classes.cardBack}>
-										Scrum Board
-										<br /> Stack: <br /> Javascript, CSS, HTML
-									</CardMedia>
-								</CardActionArea>
-							</Card>
-						</Grid>
-
-						<Grid item xs={12} sm={6} md={4}>
-							<Card className={classes.card}>
-								<CardActionArea href='https://quizzical-shockley-6aebfe.netlify.app/'>
-									<CardMedia
-										className={classes.img}
-										image={star_struck}
-										alt=' star struck '
-									></CardMedia>
-									<CardMedia className={classes.cardBack}>
-										NASA Pic of The Day
-										<br /> Stack: <br /> ReactJS, Material UI, API's
-									</CardMedia>
-								</CardActionArea>
-							</Card>
-						</Grid>
-
-						<Grid item xs={12} sm={6} md={4}>
-							<Card className={classes.card}>
-								<CardActionArea
-									target='_blank'
-									href='https://determined-villani-7bbaa8.netlify.app/'
-								>
-									<CardMedia
-										className={classes.img}
-										image={random_recipe}
-										alt='random recipe app'
-									></CardMedia>
-									<CardMedia className={classes.cardBack}>
-										Recipe Generator
-										<br /> Stack: <br /> ReactJS, Material UI, API's
-									</CardMedia>
-								</CardActionArea>
-							</Card>
-						</Grid>
-
-						<Grid item xs={12} sm={6} md={4}>
-							<Card className={classes.card}>
-								<CardActionArea
-									target='_blank'
-									href='https://eurelian.github.io/modestShirley/'
-								>
-									<CardMedia
-										className={classes.img}
-										image={modest_shirley}
-										alt=' recipe blog'
-									></CardMedia>
-									<CardMedia className={classes.cardBack}>
-										Recipe Blog
-										<br /> Stack: <br /> JAVASCRIPT, BOOTSTRAP
-									</CardMedia>
-								</CardActionArea>
-							</Card>
-						</Grid>
+						{projects.map((item, i) => {
+							return (
+								<Grid item xs={12} sm={6} md={4}>
+									<Card className={classes.card}>
+										<CardActionArea href={item.link}>
+											<CardMedia
+												className={classes.img}
+												image={item.image}
+												alt={item.description}
+											></CardMedia>
+											<CardMedia className={classes.cardBack}>
+												{item.description}
+												<br /> Stack: <br />
+												{item.stack}
+											</CardMedia>
+										</CardActionArea>
+									</Card>
+								</Grid>
+							);
+						})}
 					</Grid>
 				</Grid>
 			</Grid>

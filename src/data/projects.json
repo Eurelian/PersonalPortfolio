@@ -1,0 +1,47 @@
+{
+	"projects": [
+		{
+			"name": "Klinger Dent",
+			"description": "Dental Clinic",
+			"stack": "NextJS, Bootstrap",
+			"link": "https://klinger-dent.vercel.app/",
+			"image": "https://portfoliomessage.herokuapp.com/images/dental_practice.png"
+		},
+
+		{
+			"name": "Pareta",
+			"description": "Social Parenting App",
+			"stack": "ReactJS, NodeJS, MongoDB, MaterialUI",
+			"link": "https://pareta.netlify.app/",
+			"image": "https://portfoliomessage.herokuapp.com/images/pareta_app.png"
+		},
+		{
+			"name": "Comics Awesome",
+			"description": "E-Commerce Store",
+			"stack": "ReactJS, NodeJS, MongoDB, MaterialUI",
+			"link": "https://comicsawesome.netlify.app/",
+			"image": "https://portfoliomessage.herokuapp.com/images/comics_awesome.png"
+		},
+		{
+			"name": "Scrum Board",
+			"description": "Scrum Board",
+			"stack": "Javascript, CSS, HTML",
+			"link": "https://happy-babbage-272068.netlify.app/",
+			"image": "https://portfoliomessage.herokuapp.com/images/scrum_board.png"
+		},
+		{
+			"name": "Recipe Generator",
+			"description": "Mood Based Recipe",
+			"stack": "ReactJS, Material UI, API",
+			"link": "https://determined-villani-7bbaa8.netlify.app/",
+			"image": "https://portfoliomessage.herokuapp.com/images/random_recipe.png"
+		},
+		{
+			"name": "Modest Shirley",
+			"description": "Cooking Blog",
+			"stack": "HTML, CSS, Bootstrap",
+			"link": "https://eurelian.github.io/modestShirley/",
+			"image": "https://portfoliomessage.herokuapp.com/images/modest_shirley.png"
+		}
+	]
+}

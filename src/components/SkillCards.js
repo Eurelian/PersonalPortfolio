@@ -98,19 +98,23 @@ const SkillCards = () => {
 													className={classes.listItem}
 													style={{ fontSize: "1rem" }}
 												>
-													HTML, CSS, JavaScript, ReactJS
+													HTML, CSS, JavaScript, ReactJS, NextJS, Angular
 												</Typography>
 
 												<Typography align='center' className={classes.subTitle}>
 													Tools i Use
 												</Typography>
 												<ul style={{ listStyleType: "none", padding: 0 }}>
-													<li className={classes.listItem}>Material UI</li>
-													<li className={classes.listItem}>Bootstrap</li>
-													<li className={classes.listItem}>React Spring</li>
-													<li className={classes.listItem}>Adobe XD</li>
+													<li className={classes.listItem}>
+														Material UI, Bootstrap,{" "}
+													</li>
+
+													<li className={classes.listItem}>
+														React Spring, Framer Motion
+													</li>
+													<li className={classes.listItem}>Adobe XD, Figma</li>
 													<li className={classes.listItem}>GitHUB</li>
-													<li className={classes.listItem}>Netlify</li>
+													<li className={classes.listItem}>Netlify, Vercel</li>
 												</ul>
 											</CardContent>
 										</Card>
@@ -157,7 +161,7 @@ const SkillCards = () => {
 													className={classes.listItem}
 													style={{ fontSize: "1rem" }}
 												>
-													NodeJs, SQL
+													NodeJs, NoSQL, SQL
 												</Typography>
 
 												<Typography align='center' className={classes.subTitle}>
